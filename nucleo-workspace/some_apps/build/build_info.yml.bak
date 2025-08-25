@@ -1,0 +1,5 @@
+west:
+  command: /Users/austinbowman/zephyr_testing/venv/bin/west build -p -b nucleo_h563zi
+    -- -DEXTRA_CONF_FILE=boards/nucleo_h563zi.conf
+  topdir: /Users/austinbowman/zephyr_testing/nucleo-workspace
+  version: 1.4.0
