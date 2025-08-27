@@ -12,8 +12,9 @@ I used the example template and then developed my applications from there.
 │     └── ...
 │
 └─── app_directory/
-     ├── app
-         ├── CMakeLists.txt
-         ├── prj.conf
-         └── src/
-             └── main.c
+     ├── app/
+     │     ├── CMakeLists.txt
+     │     ├── prj.conf
+     │     └── src/
+     │         └── main.c
+
