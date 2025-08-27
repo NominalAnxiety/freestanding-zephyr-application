@@ -2,6 +2,7 @@ This is a freestanding application for zephyr (read https://docs.zephyrproject.o
 
 I used the example template and then developed my applications from there. 
 
+```
 <home>/
 ├─── zephyrproject/
 │     ├─── .west/
@@ -17,4 +18,4 @@ I used the example template and then developed my applications from there.
      │     ├── prj.conf
      │     └── src/
      │         └── main.c
-
+```
