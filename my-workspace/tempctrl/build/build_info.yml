@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/Users/langmayr/zephyrproject/tempctrl'
+    source-dir: '/Users/langmayr/zephyrproject/tempctrl'
+  board:
+    name: 'nucleo_h563zi'
+    path:
+     - '/Users/langmayr/zephyrproject/zephyr/boards/st/nucleo_h563zi'
+    qualifiers: 'stm32h563xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/Users/langmayr/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/Users/langmayr/zephyrproject/zephyr/boards/st/nucleo_h563zi/nucleo_h563zi.dts'
+     - '/Users/langmayr/zephyrproject/tempctrl/boards/nucleo_h563zi.overlay'
+    include-dirs:
+     - '/Users/langmayr/zephyrproject/modules/hal/ambiq/dts'
+     - '/Users/langmayr/zephyrproject/modules/hal/atmel/include'
+     - '/Users/langmayr/zephyrproject/modules/hal/bouffalolab/include'
+     - '/Users/langmayr/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/Users/langmayr/zephyrproject/modules/hal/gigadevice/include'
+     - '/Users/langmayr/zephyrproject/modules/hal/microchip/include'
+     - '/Users/langmayr/zephyrproject/modules/hal/microchip/dts'
+     - '/Users/langmayr/zephyrproject/modules/hal/nuvoton/dts'
+     - '/Users/langmayr/zephyrproject/modules/hal/nxp/dts'
+     - '/Users/langmayr/zephyrproject/modules/hal/stm32/dts'
+     - '/Users/langmayr/zephyrproject/modules/hal/ti/dts'
+     - '/Users/langmayr/zephyrproject/zephyr/include'
+     - '/Users/langmayr/zephyrproject/zephyr/include/zephyr'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/common'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/vendor'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/rx'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/x86'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/xtensa'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/sparc'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/riscv'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/posix'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/arm64'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/arm'
+     - '/Users/langmayr/zephyrproject/zephyr/dts/arc'
+     - '/Users/langmayr/zephyrproject/zephyr/dts'
+    user-files:
+     - '/Users/langmayr/zephyrproject/tempctrl/boards/nucleo_h563zi.overlay'
+  kconfig:
+    files:
+     - '/Users/langmayr/zephyrproject/zephyr/boards/st/nucleo_h563zi/nucleo_h563zi_defconfig'
+     - '/Users/langmayr/zephyrproject/tempctrl/prj.conf'
+    user-files:
+     - '/Users/langmayr/zephyrproject/tempctrl/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/Users/langmayr/zephyr-sdk'
+  zephyr:
+    version: '4.2.99'
+    zephyr-base: '/Users/langmayr/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/Users/langmayr/zephyrproject/zephyrvenv/bin/west build -b nucleo_h563zi -p always .'
+  topdir: '/Users/langmayr/zephyrproject'
+  version: '1.4.0'

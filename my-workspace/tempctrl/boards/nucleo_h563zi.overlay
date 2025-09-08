@@ -1,0 +1,27 @@
+&pinctrl {
+    spi1_pa5_sck:  spi1_pa5_sck  { pinmux = <STM32_PINMUX('A', 5, AF5)>; };
+    spi1_pg9_miso: spi1_pg9_miso { pinmux = <STM32_PINMUX('G', 9, AF5)>; bias-pull-up; };
+    spi1_pb5_mosi: spi1_pb5_mosi { pinmux = <STM32_PINMUX('B', 5, AF5)>; };
+};
+
+&spi1 {
+    status = "okay";
+    pinctrl-0 = <&spi1_pa5_sck &spi1_pg9_miso &spi1_pb5_mosi>;
+    pinctrl-names = "default";
+
+    /* CS line */
+    cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+
+    ad7124: ad7124@0 {
+        compatible = "adi,ad7124-adc";
+        status = "okay";
+        reg = <0>;
+        spi-max-frequency = <10000000>;
+        spi-cpol;
+        spi-cpha;
+        active-device = <1>;
+        #address-cells = <1>;
+        #size-cells = <0>;
+        #io-channel-cells = <1>;
+    };
+};

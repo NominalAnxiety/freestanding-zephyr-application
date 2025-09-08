@@ -1,0 +1,5 @@
+west:
+  command: /Users/langmayr/zephyrproject/zephyrvenv/bin/west build -b nucleo_h563zi
+    -p always .
+  topdir: /Users/langmayr/zephyrproject
+  version: 1.4.0
