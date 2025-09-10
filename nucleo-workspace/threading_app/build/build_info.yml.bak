@@ -1,5 +1,0 @@
-west:
-  command: /Users/austinbowman/zephyr_testing/venv/bin/west build -p -b nucleo_h563zi
-    -- -DDTC_OVERLAY_FILE=boards/nucleo_h563zi.overlay
-  topdir: /Users/austinbowman/zephyr_testing/nucleo-workspace
-  version: 1.4.0

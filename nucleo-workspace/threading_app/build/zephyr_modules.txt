@@ -1,4 +1,0 @@
-"example-application":"/Users/austinbowman/zephyr_testing/nucleo-workspace/example-application":"/Users/austinbowman/zephyr_testing/nucleo-workspace/example-application"
-"cmsis_6":"/Users/austinbowman/zephyr_testing/nucleo-workspace/modules/hal/cmsis_6":"${ZEPHYR_CMSIS_6_CMAKE_DIR}"
-"hal_nordic":"/Users/austinbowman/zephyr_testing/nucleo-workspace/modules/hal/nordic":"${ZEPHYR_HAL_NORDIC_CMAKE_DIR}"
-"hal_stm32":"/Users/austinbowman/zephyr_testing/nucleo-workspace/modules/hal/stm32":"/Users/austinbowman/zephyr_testing/nucleo-workspace/modules/hal/stm32"
