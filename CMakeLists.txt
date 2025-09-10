@@ -7,9 +7,9 @@
 
 # This is needed so that custom driver classes using system calls are taken into
 # account
-zephyr_syscall_include_directories(include)
+cmake_minimum_required(VERSION 4.1)
 
-zephyr_include_directories(include)
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
 add_subdirectory(drivers)
-add_subdirectory(lib)
+zephyr_include_directories(drivers)
