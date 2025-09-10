@@ -25,3 +25,16 @@
         #io-channel-cells = <1>;
     };
 };
+
+&i2c1 {
+    pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
+	  pinctrl-names = "default";
+	  status = "okay";
+    
+    tps55287: tps55287@0 { /* might need to have a different reg */
+      compatible = "ti,tps55287-adc";
+      status = "okay";
+      reg = <0x0>; // probably need to change
+      /* Whatever else you need to specify for this board */
+    };
+};

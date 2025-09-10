@@ -2,6 +2,7 @@
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
 #include <zephyr/drivers/spi.h>
+#include <zephyr/drivers/i2c.h>
 #include <zephyr/logging/log.h>
 #include <stdint.h>
 #include <string.h>
