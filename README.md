@@ -4,10 +4,19 @@ Make sure you have zephyr installed! If you don't, got through the [getting star
 
 # Installation
 
-1. clone the github to wherever you want it to be (even outside the zephyr workspace as this is a [freestanding applicaiton](https://docs.zephyrproject.org/latest/develop/application/index.html#zephyr-freestanding-app))
 
-2. make sure that you have your virtual environment activated from the zephyrproject workspace 
-3. Write your code for the device driver and the temperature sensor. 
-4. Build and flash and it should work (fingers crossed)
+1. Run the following command
 
-(none of this has been tested so if it doesn't work tell me and I will try to fix it)
+```
+# initialize my-workspace for the tempctrl-zephyr-application (main branch)
+west init -m https://github.com/NominalAnxiety/tempctrl-zephyr-application.git --mr main my-workspace
+# update Zephyr modules
+cd my-workspace
+west update
+```
+
+2. make sure that you have your virtual environment activated from your own zephyrproject workspace 
+3. build and run by `cd tempctrl-zephyr-application` and then `west build -p -b $BOARD`
+
+
+
