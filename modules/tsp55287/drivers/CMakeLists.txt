@@ -1,0 +1,1 @@
+add_subdirectory_info(CONFIG_TPS55287 tps55287)

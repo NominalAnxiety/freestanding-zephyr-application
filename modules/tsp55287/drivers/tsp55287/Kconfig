@@ -1,0 +1,8 @@
+# create a new option in menuconfig
+
+config TPS55287
+  bool "TPS55287 Temperature Sensor"
+  default n       # default is disabled
+  depends on I2C
+  help
+    Enable driver for TPS55287 Temperature Sensor
