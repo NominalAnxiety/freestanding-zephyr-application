@@ -1,5 +1,5 @@
 [manifest]
-path = example-application
+path = my-workspace
 file = west.yml
 
 [zephyr]
