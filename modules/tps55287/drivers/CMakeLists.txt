@@ -1,1 +1,1 @@
-add_subdirectory_info(CONFIG_TPS55287 tps55287)
+add_subdirectory_ifdef(CONFIG_TPS55287 tps55287)
