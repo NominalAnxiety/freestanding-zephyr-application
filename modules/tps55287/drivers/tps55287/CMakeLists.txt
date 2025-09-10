@@ -1,4 +1,4 @@
 # declare zephyr library
 
 zephyr_library()
-zephyr_library_source(tps55287.c)
+zephyr_library_sources(tps55287.c)
