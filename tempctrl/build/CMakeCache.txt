@@ -35,6 +35,15 @@ BOARD_EXTENSIONS:BOOL=ON
 //Path to a program.
 BOSSAC:FILEPATH=BOSSAC-NOTFOUND
 
+//Kernel binary file
+BYPRODUCT_KERNEL_BIN_NAME:FILEPATH=/Users/austinbowman/my-workspace/example-application/tempctrl/build/zephyr/zephyr.bin
+
+//Kernel elf file
+BYPRODUCT_KERNEL_ELF_NAME:FILEPATH=/Users/austinbowman/my-workspace/example-application/tempctrl/build/zephyr/zephyr.elf
+
+//Kernel hex file
+BYPRODUCT_KERNEL_HEX_NAME:FILEPATH=/Users/austinbowman/my-workspace/example-application/tempctrl/build/zephyr/zephyr.hex
+
 //Selected board
 CACHED_BOARD:STRING=nucleo_h563zi
 
@@ -220,19 +229,19 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Zephyr-Kernel
+CMAKE_PROJECT_NAME:STATIC=ad7124_temp_reader
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=4.2.99
+CMAKE_PROJECT_VERSION:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=4
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=2
+CMAKE_PROJECT_VERSION_MINOR:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=99
+CMAKE_PROJECT_VERSION_PATCH:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -321,6 +330,9 @@ DTC:FILEPATH=/opt/homebrew/bin/dtc
 // dts2.overlay"
 DTC_OVERLAY_FILE:STRING=/Users/austinbowman/my-workspace/example-application/tempctrl/boards/nucleo_h563zi.overlay
 
+//Path to a program.
+GEN_KOBJECT_LIST:FILEPATH=/Users/austinbowman/my-workspace/zephyr/scripts/build/gen_kobject_list.py
+
 //Linker BFD compatibility (compiler reported)
 GNULD_LINKER_IS_BFD:BOOL=ON
 
@@ -337,7 +349,13 @@ IMGTOOL:FILEPATH=/Users/austinbowman/zephyrproject/.venv/bin/imgtool
 OPENOCD:FILEPATH=/opt/homebrew/bin/openocd
 
 //Path to a program.
+PAHOLE:FILEPATH=PAHOLE-NOTFOUND
+
+//Path to a program.
 PTY_INTERFACE:FILEPATH=PTY_INTERFACE-NOTFOUND
+
+//Path to a program.
+PUNCOVER:FILEPATH=PUNCOVER-NOTFOUND
 
 //Path to the SoC directory.
 SOC_FULL_DIR:PATH=/Users/austinbowman/my-workspace/zephyr/soc/st/stm32
@@ -386,6 +404,15 @@ ZephyrBuildConfiguration_DIR:PATH=ZephyrBuildConfiguration_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for Zephyr.
 Zephyr_DIR:PATH=/Users/austinbowman/my-workspace/zephyr/share/zephyr-package/cmake
+
+//Value Computed by CMake
+ad7124_temp_reader_BINARY_DIR:STATIC=/Users/austinbowman/my-workspace/example-application/tempctrl/build
+
+//Value Computed by CMake
+ad7124_temp_reader_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+ad7124_temp_reader_SOURCE_DIR:STATIC=/Users/austinbowman/my-workspace/example-application/tempctrl
 
 
 ########################
@@ -511,7 +538,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=86
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=98
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -566,6 +593,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/austinbowman/zephyrproject
 HWM:INTERNAL=v2
 //Zephyr hardware model
 HWMv2:INTERNAL=True
+KERNEL_META_PATH:INTERNAL=/Users/austinbowman/my-workspace/example-application/tempctrl/build/zephyr/zephyr.meta
 //List of SoC directories for SoC (stm32h563xx)
 SOC_DIRECTORIES:INTERNAL=/Users/austinbowman/my-workspace/zephyr/soc/st/stm32
 SOC_LINKER_SCRIPT:INTERNAL=/Users/austinbowman/my-workspace/zephyr/include/zephyr/arch/arm/cortex_m/scripts/linker.ld

@@ -1,0 +1,4 @@
+west:
+  command: /Users/austinbowman/zephyrproject/.venv/bin/west build -p -b nucleo_h563zi
+  topdir: /Users/austinbowman/my-workspace
+  version: 1.4.0
