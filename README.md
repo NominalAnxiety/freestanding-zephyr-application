@@ -4,8 +4,8 @@ Make sure you have zephyr installed! If you don't, got through the [getting star
 
 # Installation
 
-
-1. Run the following command
+1. Make sure that you have your virtual environment activated from your own zephyrproject workspace 
+2. Run the following command
 
 ```
 # initialize my-workspace for the tempctrl-zephyr-application (main branch)
@@ -15,10 +15,9 @@ cd my-workspace
 west update
 ```
 
-Feel free to rename my-workspace to what you want just make sure you rename it for all of the commands
-After running the commands you can rename the tempctrl-zephyr-application as well (it is kind of long)
+  * Feel free to rename my-workspace to what you want just make sure you rename it for all of the commands
+  * After running the commands you can rename the tempctrl-zephyr-application as well (it is kind of long)
 
-2. make sure that you have your virtual environment activated from your own zephyrproject workspace 
 3. build and run by `cd tempctrl-zephyr-application/tempctrl` and then `west build -p -b $BOARD`
 
 
