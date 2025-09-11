@@ -2,35 +2,26 @@
 
 &spi1 {
     status = "okay";
-    pinctrl-0 = <&spi1_pa5_sck &spi1_pg9_miso &spi1_pb5_mosi>;
-    pinctrl-names = "default";
-
-    /* CS line */
-    cs-gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
 
     ad7124: ad7124@0 {
         compatible = "adi,ad7124-adc";
         status = "okay";
         reg = <0>;
         spi-max-frequency = <10000000>;
-        spi-cpol;
-        spi-cpha;
         active-device = <1>;
-        #address-cells = <1>;
-        #size-cells = <0>;
         #io-channel-cells = <1>;
     };
 };
 
 &i2c1 {
-    pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
-	  pinctrl-names = "default";
 	  status = "okay";
 
     tps55287: tps55287@0 { /* might need to have a different reg */
       compatible = "ti,tps55287-adc";
       status = "okay";
-      reg = <0x0>; // probably need to change
+      reg = <1>;
+      clock-frequency = <400000> //the fast standard clock-frequency is 400 kbps
+      //might have to define the clock
       /* Whatever else you need to specify for this board */
     };
 };
