@@ -1,8 +1,4 @@
-&pinctrl {
-    spi1_pa5_sck:  spi1_pa5_sck  { pinmux = <STM32_PINMUX('A', 5, AF5)>; };
-    spi1_pg9_miso: spi1_pg9_miso { pinmux = <STM32_PINMUX('G', 9, AF5)>; bias-pull-up; };
-    spi1_pb5_mosi: spi1_pb5_mosi { pinmux = <STM32_PINMUX('B', 5, AF5)>; };
-};
+
 
 &spi1 {
     status = "okay";
@@ -30,7 +26,7 @@
     pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
 	  pinctrl-names = "default";
 	  status = "okay";
-    
+
     tps55287: tps55287@0 { /* might need to have a different reg */
       compatible = "ti,tps55287-adc";
       status = "okay";
